@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 1 (first half)</title>
+    <style>
+        body {
+            background-color: dimgray;
+            align-content: center;
+        }
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            padding: 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+     <img src="p0.jpg">
+     <img src="p1.jpg">
+     <img src="p2.jpg">
+     <img src="p3.jpg">
+     <img src="p4.jpg">
+     <img src="p5.jpg">
+     <img src="p6.jpg">
+     <img src="p7.jpg">
+     <img src="p8.jpg">
+     <img src="p9.jpg">
+
+     <script>
+         let width = new URLSearchParams(window.location.search).get("width");
+         if (!(width > 1)) {
+             width = 50;
+         }
+         if (screen.width > screen.height) {
+            for (let el of document.getElementsByTagName("img")) {
+                console.log(el)
+                el.style.width = width+"%";
+            }
+         }
+     </script>
+
+</body>
+</html>
