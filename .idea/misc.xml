@@ -32,6 +32,9 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="azul-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <created>1686151198910</created>
