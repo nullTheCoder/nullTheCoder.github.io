@@ -11,9 +11,10 @@
         img {
             margin-left: auto;
             margin-right: auto;
-            width: 600px;
+            width: 100%;
             padding: 0;
             display: block;
+            max-width: 600px;
         }
     </style>
      <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,12 +41,10 @@
      <script>
           let width = new URLSearchParams(window.location.search).get("width");
           if (width > 1) {
-              if (screen.width > screen.height) {
-                   for (let el of document.getElementsByTagName("img")) {
-                        console.log(el)
-                        el.style.width = width + "%";
-                   }
-              }
+               for (let el of document.getElementsByTagName("img")) {
+                    console.log(el)
+                    el.style.width = width + "%";
+               }
          }
      </script>
 
